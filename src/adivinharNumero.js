@@ -8,9 +8,13 @@
 // - Retornar `"Errou! Tente novamente!"` se o palpite estiver incorreto.
 
 function adivinharNumero(max, palpite) {
-  // TODO: implementar função
+  rand = Math.random()*max
+  if (rand == palpite) {
+    return "Acertou!"
+  }
+  else{
+    return "Errou! Tente novamente!"
+  }
 }
-
-
 // NÃO REMOVA O CÓDIGO ABAIXO
 module.exports = { adivinharNumero };

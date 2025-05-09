@@ -5,6 +5,7 @@
 
 function somar(a, b) {
   let resultado = a + b;
+  b = 0
   return resultado;
 }
 
@@ -14,6 +15,6 @@ function somar(a, b) {
   console.log(somar(5, "3"));    // Esperado: 8
   console.log(somar("10", 10));  // Esperado: 20
   console.log(somar("abc", 5));  // Esperado: "Parâmetro inválido"
-  console.log(somar(null, 5));   // Esperado: "Parâmetro inválido"
+  console.log(somar(NaN, 5));   // Esperado: "Parâmetro inválido"
 
   module.exports = { somar };
